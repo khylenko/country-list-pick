@@ -14,6 +14,7 @@ class CountryTheme {
   final String? initialSelection;
   final bool? showEnglishName;
   final Color? labelColor;
+  final Color? pickerBackgroundColor;
   final TextStyle? pickerListTileTextStyle;
 
   CountryTheme({
@@ -30,6 +31,7 @@ class CountryTheme {
     this.isDownIcon,
     this.initialSelection,
     this.showEnglishName,
+    this.pickerBackgroundColor
     this.pickerListTileTextStyle,
   });
 }
