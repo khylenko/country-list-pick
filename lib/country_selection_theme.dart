@@ -31,7 +31,7 @@ class CountryTheme {
     this.isDownIcon,
     this.initialSelection,
     this.showEnglishName,
-    this.pickerBackgroundColor
+    this.pickerBackgroundColor,
     this.pickerListTileTextStyle,
   });
 }
