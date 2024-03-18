@@ -136,7 +136,10 @@ class _SelectionListState extends State<SelectionList> {
                                 package: 'country_list_pick',
                                 width: 32.0,
                               ),
-                              title: Text(widget.initialSelection!.name!),
+                              title: Text(
+                                widget.initialSelection!.name!,
+                                style: widget.theme?.pickerListTileTextStyle,
+                              ),
                               trailing: Padding(
                                 padding: const EdgeInsets.only(right: 20.0),
                                 child: Icon(Icons.check, color: Colors.green),
