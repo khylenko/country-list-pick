@@ -75,7 +75,7 @@ class _SelectionListState extends State<SelectionList> {
     Widget scaffold = Scaffold(
       appBar: widget.appBar,
       body: Container(
-        color: widget.theme.pickerBackgroundColor ?? Color(0xfff4f4f4),
+        color: widget.theme?.pickerBackgroundColor ?? Color(0xfff4f4f4),
         child: LayoutBuilder(builder: (context, contrainsts) {
           diff = height - contrainsts.biggest.height;
           _heightscroller = (contrainsts.biggest.height) / _alphabet.length;
@@ -199,7 +199,7 @@ class _SelectionListState extends State<SelectionList> {
           ),
            title: Text(
             e.name!,
-            style: widget.theme.pickerListTileTextStyle,
+            style: widget.theme?.pickerListTileTextStyle,
           ),
           onTap: () {
             _sendDataBack(context, e);
